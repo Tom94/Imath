@@ -945,8 +945,8 @@ public:
     static constexpr bool               has_infinity      = true;
     static constexpr bool               has_quiet_NaN     = true;
     static constexpr bool               has_signaling_NaN = true;
-    static constexpr float_denorm_style has_denorm        = denorm_present;
-    static constexpr bool               has_denorm_loss   = false;
+    // static constexpr float_denorm_style has_denorm        = denorm_present;
+    // static constexpr bool               has_denorm_loss   = false;
     static constexpr IMATH_INTERNAL_NAMESPACE::half               infinity () IMATH_NOEXCEPT
     {
         return IMATH_INTERNAL_NAMESPACE::half (IMATH_INTERNAL_NAMESPACE::half::FromBits, 0x7c00); /*half::posInf()*/
